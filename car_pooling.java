@@ -6,7 +6,7 @@ public class car_pooling {
         Float parking, consumption, charge, newcost;
         Float gallon, price, cost, save;
         Scanner input = new Scanner(System.in);
-        System.out.println("Hello, please what's your name as you check in?");
+        System.out.println("\nHello, please what's your name as you check in?");
         name = input.nextLine();
         System.out.println("Welcome to Car Pooling System "+name+"! Happy to have you back.");
 
@@ -33,10 +33,11 @@ public class car_pooling {
         System.out.println("Adding your parking fees, your are expected to spend Ksh"+cost);
 
         //cost sharing
-        System.out.println("Do you mind cutting cost? What's your car capacity?");
+        System.out.println("\nDo you mind cutting cost, what's your car passenger capacity?");
         capacity = input.nextInt();
         newcost = cost/capacity;
         save = cost - newcost;
+        System.out.println("Kila mtu ata lipa "+newcost);
         System.out.println("This will save you "+save+".\n \tThanks "+name);
 }
 }
